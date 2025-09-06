@@ -1,0 +1,62 @@
+#about .container {
+    padding-top: 7rem;
+}
+#mission_vision .mission-crd, #mission_vision .vision-crd {
+    border-width: 1px 1px 1px 8px !important;
+}
+#mission_vision .mission-crd, #mission_vision .mission-crd .card {
+    border: 1px solid #3AB05B;
+    box-shadow: 0px 0px 2px 0px #00000040;
+}
+#mission_vision .vision-crd, #mission_vision .vision-crd .card {
+    border: 1px solid #FB9330;
+    box-shadow: 0px 0px 2px 0px #00000040;
+}
+#mission_vision .mission-crd .card, #mission_vision .vision-crd .card{
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+#mission_vision .mission-crd hr {
+    border: 2px solid #3AB05B;
+    opacity: 0.50;
+}
+#mission_vision .vision-crd hr {
+    border: 2px solid #FB9330;
+    opacity: 0.50;
+}
+
+#founder {
+    background: #E9F1EE;
+}
+#founder .row {
+    align-items: center;
+}
+
+#future {
+    background: #008325;
+}
+#future .futr_wdt {
+    width: 65%;
+    justify-self: center;
+}
+
+#manufacturing .row {
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    #future .futr_wdt {
+        width: 95%!important;
+    }
+}
+@media (max-width: 600px) {
+    #about .container {
+        padding-top: 5rem;
+    }
+    .banner {
+        height: 200px!important; /* adjust as needed */
+    }
+    #future a {
+        font-size: smaller;
+    }
+}

@@ -1,0 +1,46 @@
+#videos {
+    padding-top: 4.5rem;
+    background: #f8f8ffe0;
+}
+#videos .bnr_wdt {
+    width: 90%;
+}
+#videos .vd_crd {
+    height: 300px;
+    justify-content: center;
+}
+#videos .vd_crd .card {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    align-items: center;
+}
+#close_button button {
+    position: absolute;
+    margin-left: 1rem;
+    z-index: 9;
+    margin-top: -1.5rem;
+    background: none !important;
+    border: none !important;
+}
+.modal-content { 
+    background: none !important;
+    border-radius: 0px !important;
+}
+@media(min-width: 600px) and (max-width: 1024px) {
+    #videos {
+        padding-top: 5rem;
+    }
+}
+@media(max-width: 600px) {
+    #videos {
+        padding-top: 4rem;
+    }
+    .modal-dialog {
+        margin-top: 5rem;
+    }
+    #close_button button {
+        margin-left: -2rem !important;
+        margin-top: -2rem !important;
+    }
+}

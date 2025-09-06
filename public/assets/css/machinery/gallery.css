@@ -1,0 +1,115 @@
+
+#close_button button {
+    position: absolute;
+    margin-left: 1rem;
+    z-index: 9;
+    margin-top: -1.5rem;
+    background: none !important;
+    border: none !important;
+}
+.owl-carousel .owl-item img {
+    object-position: center;
+    width: 100% !important;
+    object-fit: contain;
+}
+.item {
+    text-align: -webkit-center !important;
+}
+
+#carousel .owl-carousel .owl-item img {
+    display: inline!important;
+    width: 75%!important;
+    height: 180px;
+}
+/* #carousel .custom-nav button {
+    border: none;
+    background: none;
+} */
+#carousel .owl-nav {
+    text-align: center!important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    /* padding: 0.5rem!important; */
+    border: 1px solid #008ddf!important;
+    border-radius: 50%!important;
+    margin: 5px!important;
+    padding: 0.5rem 1.1rem!important;
+    height: 37px!important;
+}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+    margin: 1rem!important;
+}
+
+#exampleModal .sld-img {
+    width: 15%;
+    height: 100px;
+}
+#exampleModal .owl-carousel .owl-item img, #exampleModal .modal-content {
+    height: 500px;
+}
+#exampleModal .owl-nav {
+    justify-content: space-between;
+    display: flex;
+}
+#exampleModal .owl-nav button.owl-prev {
+    z-index: 9;
+    margin-left: -50px !important;
+}
+#exampleModal .owl-nav button.owl-next {
+    z-index: 9;
+    margin-right: -50px !important;
+}
+#exampleModal .owl-nav button.owl-next, .modal .owl-nav button.owl-prev {
+    background: white !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    /* padding: 0.5rem !important; */
+    border: 1px solid #ffffff !important;
+    border-radius: 50% !important;
+    margin: 5px !important;
+    padding: 0.5rem 1.1rem !important;
+    height: 33px !important;
+    width: 33px !important;
+}
+.owl-theme .owl-nav {
+    margin-top: -284px !important;
+}
+#carousel .image-container {
+    margin-top: -50px;
+}
+@media (min-width: 1400px) and (max-width: 1567px) {
+    .owl-theme .owl-nav {
+        margin-top: -379px !important;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .owl-theme .owl-nav {
+        margin-top: -279px !important;
+    }
+    #exampleModal .owl-carousel .owl-item img, #exampleModal .modal-content {
+        height: 400px;
+    }
+}
+@media (max-width: 600px) {
+    #close_button button {
+        margin-left: -2rem !important;
+        margin-top: -2rem !important;
+    }
+    #exampleModal .owl-nav {
+        justify-content: end !important;
+        width: 83%;
+    }
+    .owl-theme .owl-nav {
+        margin-top: -50px !important;
+    }
+    #exampleModal .owl-carousel .owl-item img, #exampleModal .modal-content {
+        height: 250px;
+    }
+    .modal-dialog {
+        margin-top: 5rem;
+    }
+}

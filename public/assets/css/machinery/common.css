@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    touch-action: manipulation;
+}
+body {
+    user-scalable: none;
+    -webkit-user-zoom: fixed;
+}
+@viewport {
+    zoom: 1.0 !important;
+    user-zoom: fixed !important;
+}
+
+
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	--primary: hsl(var(--hue),90%,55%);
+	--primary-l: hsl(var(--hue),90%,65%);
+	--primary-d: hsl(var(--hue),90%,45%);
+	--white: hsl(var(--hue),10%,100%);
+	--white-d: hsl(var(--hue),10%,45%);
+}
+#loaders {
+	background-color: var(--bg);
+	color: var(--fg);
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 100vh;
+    opacity: 0.97;
+}
+
+.book {
+	--color: #1356dc;
+	--duration: 6.8s;
+	width: 32px;
+	height: 12px;
+	position: relative;
+	margin: 32px 0 0 0;
+	zoom: .8;
+  }
+  .book .inner {
+	width: 100px;
+	height: 12px;
+	position: relative;
+	transform-origin: 2px 2px;
+	transform: rotateZ(-90deg);
+	-webkit-animation: book var(--duration) ease infinite;
+			animation: book var(--duration) ease infinite;
+  }
+
+/* #scroll-top img,svg {
+    height: 70px;
+    width: 60px;
+} */
+
+#scroll-top {
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  /* background: #FBBC05; */
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 999!important;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b4b4b4;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.sys-view {
+    display: block;
+}
+.mbl-view {
+    display: none;
+}
+.tab-view-no {
+    display: block;
+}
+.tab-view {
+    display: none;
+}
+.agro_txt_clr {
+    color: #35B453;
+}
+.agro_bg_clr {
+    background: #35B453;
+}
+.mech_bg_clr {
+    background: #FB9330;
+}
+.mech_text_clr {
+    color: #FB9330;
+}
+.grn_clr {
+    background: #E9FFEF;
+}
+.fw-bold {
+    font-weight: 600 !important;
+}
+@media(max-width: 1024px) {   
+    .tab-view-no {
+        display: none;
+    }
+    .tab-view {
+        display: block;
+    }
+}
+@media(max-width: 600px) {
+    .sys-view {
+        display: none;
+    }
+    .mbl-view {
+        display: block;
+    }
+}

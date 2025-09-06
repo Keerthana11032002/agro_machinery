@@ -1,0 +1,74 @@
+footer li {
+    list-style-type: none!important;
+}
+footer{
+    color: white;
+}
+footer a{
+    color: white!important;
+    text-decoration: double!important;
+}
+footer p {
+    text-align: justify;
+}
+footer #share img {
+    width:30px;
+    height:30px;
+}
+footer hr {
+    margin: 1rem 0;
+    color: blanchedalmond!important;
+    border: 1!important;
+    border-top: groove!important;
+    opacity: 0.25;
+}
+footer .fs-6 {
+    font-size: 0.9rem!important;
+    line-height: 1.9;
+}
+.foot_abt {
+    width: 65%;
+}
+.foot_logo {
+    width: 23%;
+}
+.mail img, .phone img, .address img {
+    width: 20px;
+    height: fit-content;
+}
+@media (max-width: 1024px) {
+    .foot_abt {
+        width: 100%!important;
+    }
+    ul {
+        padding-left: 0rem;
+    }
+}
+@media (min-width: 1736px) and (max-width: 2000px){
+    .reputation {
+        width: 41.66666667%!important;
+    }
+    .srvices_gf ul,.support_gf ul {
+        padding-left: 4rem!important;
+    }
+    .srvices_gf,.support_gf {
+        width: 16.66666667%!important;
+    }
+}
+@media (min-width: 1376px) and (max-width: 1736px){
+    .support_gf ul {
+        padding-left: 0!important;
+    }
+}
+@media (max-width: 992px) and (min-width: 600px){
+    footer .col-lg-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (max-width: 575px) and (min-width: 481px){
+    .srvices_gf,.support_gf {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}

@@ -1,0 +1,48 @@
+#contact_us {
+    padding-top: 4.5rem;
+    background: #f8f8ffe0;
+}
+#contact_us .main_crd {
+    margin-top: -230px;
+}
+#contact_us .grn_clr {
+    border-width: 0 6px 0 0;
+    border-color: #35B453;
+}
+#contact_us .agro_bg_clr {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#contact_us .row {
+    align-items: center;
+}
+#contact_us input, #exampleFormControlTextarea1, .grn_clr span {
+    font-size: smaller;
+}
+#contact_us label {
+    font-weight: 500;
+}
+#contact_us .err_msg {
+    font-size: small;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+    font-size: 1.9em !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    background-color: #35B453 !important;
+}
+@media(min-width: 600px) and (max-width: 1024px) {
+    #contact_us {
+        padding-top: 5rem;
+    }
+}
+@media (max-width: 600px) {
+    #contact_us {
+        padding-top: 4rem;
+    }
+    #contact_us .main_crd {
+        margin-top: -150px;
+    }
+}
