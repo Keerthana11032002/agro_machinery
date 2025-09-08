@@ -25,18 +25,6 @@
     <script>
         var baseurl = "{{url('/')}}";
         $('#loaders').show().delay(500).fadeOut ('slow');
-
-        $(function(){
-            var offset = 200;
-            var duration = 200;
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > offset) {
-                    $('#scroll-top').fadeIn(duration);
-                } else {
-                    $('#scroll-top').fadeOut(duration);
-                }
-            });
-        });
     </script>
     @yield('customscript')
 </html>

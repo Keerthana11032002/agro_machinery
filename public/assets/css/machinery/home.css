@@ -77,10 +77,10 @@
     background: #002425;
 }
 #why_choose_us p {
-    font-size: large;
+    font-size: large!important;
 }
 #why_choose_us small {
-    font-size: medium;
+    font-size: medium!important;
 }
 
 #gallery .glr_wdth, #spares .glr_wdth {

@@ -3,7 +3,7 @@
         background: #414242!important;
     }
 </style>
-<a id="scroll-top" href="#" target="_blank" style="display: none;"><img src="{{asset('assets/images/icons8-whatsapp-48.png')}}" alt="Scroll to Top"/></a>
+<a id="scroll-top" href="#" target="_blank"><img src="{{asset('assets/images/icons8-whatsapp-48.png')}}" alt="Scroll to Top"/></a>
 <footer>
     <div class="foot pt-3 pt-lg-5">
         <div class="container-fluid px-3 px-lg-5">
