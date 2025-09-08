@@ -79,7 +79,7 @@
                         @endforeach
                     </div>
                     <div class="text-center my-3 my-md-5">
-                    <a href="{{url('/products')}}" class="text-decoration-none py-2 px-3 rounded-2 agro_bg_clr text-white" data-aos="fade-up" data-aos-duration="1000"><span class="me-3">Visit All Products</span><svg width="14" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="{{url('/products')}}" class="text-decoration-none py-2 px-3 rounded-2 agro_bg_clr text-white" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"><span class="me-3">Visit All Products</span><svg width="14" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_144_75)">
                     <path d="M16.2494 0H8.74944C8.05944 0 7.49944 0.559167 7.49944 1.25C7.49944 1.94083 8.05944 2.5 8.74944 2.5H15.7319L0.365273 17.8658C-0.12306 18.3533 -0.12306 19.1458 0.365273 19.6333C0.60944 19.8775 0.92944 19.9992 1.24944 19.9992C1.56944 19.9992 1.88944 19.8775 2.13361 19.6333L17.4994 4.2675V11.25C17.4994 11.9408 18.0594 12.5 18.7494 12.5C19.4394 12.5 19.9994 11.9408 19.9994 11.25V3.75C19.9994 1.6825 18.3169 0 16.2494 0Z" fill="white"/>
                     </g>
