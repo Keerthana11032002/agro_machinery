@@ -1,7 +1,7 @@
 <div class="sys-view tab-view-no">
     <nav class="navbar navbar-expand-lg navbar-light bg-white rounded-0 px-5" id="nav-nbv">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="{{url('/')}}" style="width: 12em;"><img src="{{url('assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png')}}" alt="Jai Agro Machinery" class="navbar-logo ps-2"/><h5 class="agro_txt_clr mb-0">Jai Agro Machinery</h5></a>
+            <a class="navbar-brand d-flex align-items-center" href="{{url('/')}}" style="width: 12em;"><img src="{{$contentUrl.$setting->logo}}" alt="{{$setting->title}}" class="navbar-logo ps-2"/><h5 class="agro_txt_clr mb-0">{{$setting->title}}</h5></a>
             <button class="navbar-toggler" id="toggleButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

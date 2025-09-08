@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use Illuminate\Pagination\Paginator;
+use App\Models\Setting;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,7 +24,8 @@ class AppServiceProvider extends ServiceProvider
     {
         
         $contentUrl = env('CONTENT_URL', 'http://localhost/agro_machinery_admin/public/');
-        View::share(compact('contentUrl'));
+        $setting = Setting::first();
+        View::share(compact('contentUrl', 'setting'));
         paginator::useBootstrapFive();
     }
 }

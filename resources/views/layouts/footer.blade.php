@@ -11,7 +11,7 @@
                 <div class="row px-0 px-lg-3">
                     <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-6 reputation">
                         <div class="foot_abt">
-                            <img src="{{url('assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png')}}" class="foot_logo pb-3" alt="Scroll to Top"/>
+                            <img src="{{$contentUrl.$setting->logo}}" class="foot_logo pb-3" alt="Scroll to Top"/>
                             <p class="my-3 fs-6">We prioritize your trust by ensuring that all your information is kept safe and secure through advanced encryption and privacy protection. Our platform is design.</p>
                             <div>Follow Us On</div>
                             <div class="d-flex gap-2 my-3" id="share">
@@ -55,15 +55,15 @@
                         <h5>Contact Us</h5>
                         <div class="d-flex mail my-4">
                             <img src="{{asset('assets/images/mail_932485.png')}}" alt="Contact Us" class="me-3 pt-1"/>
-                            <div><div class="fw-bold">Email</div><a href="mailto:JaiAgriagro.@gmail.com" class=" fw-light">JaiAgriagro.@gmail.com</a></div>
+                            <div><div class="fw-bold">Email</div><a href="mailto:{{$setting->mail}}" class=" fw-light">{{$setting->mail}}</a></div>
                         </div>
                         <div class="d-flex phone my-4">
                             <img src="{{asset('assets/images/phone_28364298.png')}}" alt="Contact Us" class="me-3 pt-1"/>
-                            <div><div class="fw-bold">Phone</div><a href="" class=" fw-light">+91 12345 12345</a></div>
+                            <div><div class="fw-bold">Phone</div><a href="" class=" fw-light">{{$setting->number}}</a></div>
                         </div>
                         <div class="d-flex address fs-6">
                             <img src="{{asset('assets/images/location_2075835.png')}}" alt="address" class="me-3 pt-1"/>
-                            <div class="cont"><div class="fw-bold">Location</div><div class=" fw-light">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</div></div>
+                            <div class="cont"><div class="fw-bold">Location</div><div class=" fw-light">{{$setting->location}}</div></div>
                         </div>
                     </div>
                 </div>  

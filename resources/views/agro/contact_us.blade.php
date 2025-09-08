@@ -43,17 +43,17 @@
                                         <img src="{{url('assets/images/phone_28364298.png')}}" class="w-50" alt="" />
                                     </div>
                                     <b class="lh-lg">Phone</b>
-                                    <span class="lh-lg mb-3">+91 12345 12345</span>
+                                    <span class="lh-lg mb-3">{{$setting->number}}</span>
                                     <div class="card agro_bg_clr rounded-circle p-2 border-0">
                                         <img src="{{url('assets/images/mail_932485.png')}}" class="w-50" alt="" />
                                     </div>
                                     <b class="lh-lg">Email Id</b>
-                                    <span class="lh-lg mb-3">JaiAgro2313@gmail.Com</span>
+                                    <span class="lh-lg mb-3">{{$setting->mail}}</span>
                                     <div class="card agro_bg_clr rounded-circle p-2 border-0">
                                         <img src="{{url('assets/images/location_2075835.png')}}" class="w-50" alt="" />
                                     </div>
                                     <b class="lh-lg">Location</b>
-                                    <span class="lh-lg mb-3">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016 </span>
+                                    <span class="lh-lg mb-3">{{$setting->location}} </span>
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
