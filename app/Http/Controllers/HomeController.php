@@ -73,13 +73,14 @@ class HomeController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email'],
+            'phone' => ['required', 'regex:/^[0-9]{10}$/'],
             'message' => ['required'],
         ]);
     
         $contact = new Contact;
         $contact->name = $request->name;
         $contact->mail = $request->email;
-        $contact->phone = $request->number;
+        $contact->phone = $request->phone;
         $contact->description = $request->message;
         $contact->save();
     
