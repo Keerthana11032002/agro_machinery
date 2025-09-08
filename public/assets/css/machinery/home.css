@@ -59,6 +59,9 @@
         transition: 0.4s ease !important;
     }
 }
+#products .row .card:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
 #products .row .card:hover img {
     transform: scale(1.02);
 }

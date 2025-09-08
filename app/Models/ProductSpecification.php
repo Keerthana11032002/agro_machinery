@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductSpecification extends Model
 {
-     protected $fillable = [
+    protected $fillable = [
         'product_id',
         'specification_id',
         'type',

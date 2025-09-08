@@ -10,6 +10,10 @@ use App\Models\Spare;
 use App\Models\Image;
 use App\Models\Video;
 use App\Models\Contact;
+use Mail;
+use App\Mail\ContactMail;
+use Carbon\Carbon;
+use DateTime;
 
 class HomeController extends Controller
 {
@@ -18,6 +22,7 @@ class HomeController extends Controller
 
         return view('agro.home', compact('products'));
     }
+
     public function products() {
         $products = Product::where('is_active', 0)->where('deleted_at', 0)->latest()->get();
         return view('products.product', compact('products'));
@@ -76,19 +81,29 @@ class HomeController extends Controller
         $contact->phone = $request->number;
         $contact->description = $request->message;
         $contact->save();
-        if (Mail::to('keerthana@skyraan.com')->send(new ContactMail($contact))) {
-            $checKmail = 'email sent to keerthana@skyraan.com';
-            $response = [
-                'result' => '1',
-                'error' => $checKmail,
-            ];
-        } else {
-            $checKmail = 'Failed to send mail to keerthana@skyraan.com';
-            $response = [
-                'result' => '1',
-                'error' => $checKmail
-            ];
-        }
+
+        $date_time = Carbon::parse($contact->created_at)->diffForHumans();
+        $html = view('mails.adminmail', compact('contact','date_time'))->render();
+        $adminEmail = "keerthana@skyraan.com";
+        $userEmail = $contact->mail;
+        $userName = $contact->name;
+        $subject ="New Message Received from " .$userName;
+        Mail::html($html, function($message) use($userName, $userEmail, $adminEmail, $subject)
+        {
+            $message->from($userEmail,$userName);
+            $message->to($adminEmail,'Jai Agro Machinery');
+            $message->subject($subject);
+        });
+        $replay = view('mails.returnmail')->render();
+        $subject ="Message Received at Jai Agro Machinery";
+        $data = view('mails.returnmail', compact('contact','date_time'))->render();
+        Mail::html($data, function($message) use($userName, $userEmail, $adminEmail, $subject)
+        {
+            $message->from($adminEmail,'Jai Agro Machinery');
+            $message->to($userEmail,$userName);
+            $message->subject($subject);
+        });
+        
         return response()->json(['message' => 'Yours message sent successfully']);
     }
 }

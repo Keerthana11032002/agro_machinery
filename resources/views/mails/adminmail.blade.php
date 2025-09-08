@@ -53,32 +53,32 @@
         <div class="" style="display:flex; justify-content:center;">
             <div class="setbg">
                 <div style="text-align: center;">
-                    <img src="https://biblereadingzone.skyraan.net/assets/olybible/logo/olybible.png" alt="bible logo" style="width: 25%;padding-bottom: 1rem;"/>
+                    <img src="https://agromachinery.skyraantech.com/assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png" alt="Jai Agro Machinery logo" style="width: 25%;padding-bottom: 1rem;"/>
                 </div>
-                <div style="text-align: center;font-size: 2rem;padding-bottom: 1rem; font-weight: 700; color:#2B5394;">Cliend Enquiry</div>                    
+                <div style="text-align: center;font-size: 2rem;padding-bottom: 1rem; font-weight: 700; color:#2B5394;">User Enquiry</div>                    
                 <div style="margin-left: 3rem;margin-right: 3rem;">
                     <div style="display: flex; font-size: 18px;">
-                        <p style="width:150px;"><strong>Client ID</strong></p>
-                        <p><strong style="margin-right: 0.5rem;">:</strong> SKY{{$contact->id}}</p>
+                        <p style="width:150px;"><strong>User ID</strong></p>
+                        <p><strong style="margin-right: 0.5rem;">:</strong> User_{{$contact->id}}</p>
                     </div>
                     <div style="display: flex; font-size: 18px;">
                         <p style="width:150px;"><strong>Name</strong></p>
                         <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->name}}</p>
                     </div>
-                    @if($contact->mobile != null)
+                    @if($contact->phone != null)
                         <div style="display: flex; font-size: 18px;">
                             <p style="width:150px;"><strong>Mobile</strong></p>
-                            <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->mobile}}</p>
+                            <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->phone}}</p>
                         </div>
                     @endif
                     <div style="display: flex; font-size: 18px;">
                         <p style="width:150px;"><strong>Email</strong></p>
-                        <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->email}}</p>
+                        <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->mail}}</p>
                     </div>
-                    @if($contact->message != null)
+                    @if($contact->description != null)
                         <div style="display: flex; font-size: 18px;">
                             <p style="width:150px;"><strong>Description</strong></p>
-                            <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->message}}</p>
+                            <p><strong style="margin-right: 0.5rem;">:</strong> {{$contact->description}}</p>
                         </div>
                     @endif
                 </div>

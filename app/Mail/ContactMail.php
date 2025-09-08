@@ -24,12 +24,12 @@ class ContactMail extends Mailable
     /**
      * Get the message envelope.
      */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Contact Mail',
-        );
-    }
+    // public function envelope(): Envelope
+    // {
+    //     return new Envelope(
+    //         subject: 'Contact Mail',
+    //     );
+    // }
 
     public function build()
     {

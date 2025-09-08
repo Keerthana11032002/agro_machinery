@@ -28,10 +28,12 @@
                     <div class="col-4 sys-view">
                         <img src="{{$contentUrl.$product_detail->image}}" alt="{{$product_detail->title}}" class="w-100 h-100"/>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 position-relative">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                         <h3 class="fw-bold mb-3">{{$product_detail->title}}</h3>
-                        <img src="{{$contentUrl.$product_detail->image}}" alt="{{$product_detail->title}}" class="my-3 mbl-view w-75 h-100"/>
-                        <div class="display-content">{!! $product_detail->description !!}</div>
+                        <div class="my-3 mbl-view">
+                            <img src="{{$contentUrl.$product_detail->image}}" alt="{{$product_detail->title}}" class="w-75 h-100"/>
+                        </div>
+                        <div class="">{!! $product_detail->description !!}</div>
                     </div>
                 </div>
                 

@@ -43,10 +43,10 @@
                     <span class="agri_nm">Agriculture</span>
                     </h1>
 
-                    <p class="lh-lg fw-light text-white text-center pb-3">With cutting-edge technology and decades of expertise, we design agricultural machinery that delivers superior performance, fuel efficiency, and long-lasting reliability — helping farmers worldwide achieve more with less effort.”</p>
+                    <p class="lh-lg fw-light text-white text-center pb-3"><span data-aos="fade-left" data-aos-duration="3000">With cutting-edge technology and decades of expertise, we design agricultural machinery that delivers superior performance, fuel efficiency, and long-lasting reliability</span> — <span data-aos="fade-right" data-aos-duration="3000">helping farmers worldwide achieve more with less effort.”</span></p>
                     <div class="d-flex justify-content-center gap-3">
-                        <a href="{{url('/products')}}" class="text-decoration-none py-2 px-3 rounded-2 agro_bg_clr text-white">Explore Our Machines</a>
-                        <a href="{{url('/contact-us')}}" class="text-decoration-none py-2 px-3 rounded-2 mech_bg_clr text-white">Request a Quote</a>
+                        <a href="{{url('/products')}}" data-aos="fade-right" data-aos-duration="1500" class="text-decoration-none py-2 px-3 rounded-2 agro_bg_clr text-white">Explore Our Machines</a>
+                        <a href="{{url('/contact-us')}}" data-aos="fade-left" data-aos-duration="1500" class="text-decoration-none py-2 px-3 rounded-2 mech_bg_clr text-white">Request a Quote</a>
                     </div>
                 </div>
             </div>
