@@ -140,7 +140,7 @@ $('#contact_form').submit(function(e) {
         {
             $("#type-btn").hide();
             $("#type-sbt").show();
-            $("#type-sbt").attr('disabled', true);
+            // $("#type-sbt").attr('disabled', true);
             Swal.fire({
                 title: response.message,
                 showClass: {
@@ -158,6 +158,7 @@ $('#contact_form').submit(function(e) {
                   `
                 }
               });
+              document.getElementById("contact_form").reset();
               $('.contact-form')[0].reset();
                 $('.contact-name-error, .contact-mail-error, .contact-number-error, .contact-message-error').text('');
         }

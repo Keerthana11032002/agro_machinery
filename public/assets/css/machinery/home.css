@@ -76,7 +76,7 @@
 #why_choose_us .card {
     background: #002425;
 }
-#why_choose_us p {
+#why_choose_us p, #spares p, #services p, #services li, #help p {
     font-size: large!important;
 }
 #why_choose_us small {

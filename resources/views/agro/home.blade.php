@@ -165,7 +165,7 @@
             <div class="spares_bg p-3 p-lg-5">
                 <div class="container-fluid">
                     <div class="glr_wdth">
-                        <h3 class="text-center mb-4 fw-bold text-white" data-aos="zoom-in-down">Genuine Spares for Every Agri Machine</h3>
+                        <h2 class="text-center mb-4 fw-bold text-white" data-aos="zoom-in-down">Genuine Spares for Every Agri Machine</h2>
                         <p class="lh-lg text-white text-center">we provide a wide range of genuine agricultural machinery spare parts to ensure your equipment keeps working at peak performance. Our spares are design.</p>
                         <div class="text-center mt-4">
                             <a href="{{url('/spares')}}" data-aos="fade-up" class="text-decoration-none py-2 px-3 rounded-2 mech_bg_clr text-white"><span class="me-3">Discover Our Spares</span><svg width="14" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +189,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-5 col-lg-5 col-xl-5 col-xl-5 pe-4">
-                            <h5 class="fw-bold lh-lg" data-aos="fade-left">Our Services</h5>
+                            <h2 class="fw-bold lh-lg" data-aos="fade-left">Our Services</h2>
                             <img src="{{url('assets/images/home/young-farmer-taking-care-his-business 1.png')}}" data-aos="fade-left" class="service_img pb-3 mbl-view w-75" alt="Jai Agro Machinery Services Image"/>
                             <p class="lh-lg pb-3" data-aos="fade-left">We prioritize your trust by ensuring that all your information is kept safe and secure through advanced encryption and privacy protection. Our platform is designed with security at its core, so you can browse, post, and manage your business confidently. </p>
                             <li class="pb-3" data-aos="fade-left">We prioritize your trust by ensuring that all your information is kept</li>
@@ -207,7 +207,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-7 col-xl-7">
-                            <h5 class="agro_txt_clr fw-bold" data-aos="fade-right">Need Help?</h5>
+                            <h3 class="agro_txt_clr fw-bold" data-aos="fade-right">Need Help?</h3>
                             <p class="lh-lg" data-aos="fade-right">Speak with a human to filling out a form? call corporate office and we will connect you with a team member help. </p>
                         </div>
                         <div class="col-12 col-md-3 col-lg-3 col-xl-3 col-xl-3">
