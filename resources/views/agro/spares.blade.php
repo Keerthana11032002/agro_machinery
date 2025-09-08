@@ -33,9 +33,11 @@
                 <div class="row gy-4">
                     @foreach($spares as $index => $spare)
                         <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="card border-0 p-3 h-100" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card border-0 p-3 justify-content-between h-100" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="card bg-light border-0 px-2 py-1 z-1">SR.NO. {{$index + 1}}</div>
+                                <div class="position-relative">
                                 <img src="{{$contentUrl.$spare->image}}" alt="{{$spare->title}}" class=" my-3 w-100">
+                                </div>
                                 <span class="text-center">{{$spare->title}}</span>
                             </div>
                         </div>

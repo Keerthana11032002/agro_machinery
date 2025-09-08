@@ -57,7 +57,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-                                <form class="contact-form">
+                                <form id="contact_form" enctype="multipart/form-data">
                                     @csrf
                                     <div class="mb-4">
                                         <label for="contact_name" class="form-label">Name</label>

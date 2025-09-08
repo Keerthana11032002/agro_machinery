@@ -76,6 +76,12 @@
 #why_choose_us .card {
     background: #002425;
 }
+#why_choose_us p {
+    font-size: large;
+}
+#why_choose_us small {
+    font-size: medium;
+}
 
 #gallery .glr_wdth, #spares .glr_wdth {
     width: 68%;

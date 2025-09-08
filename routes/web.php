@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Contact;
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -21,6 +22,15 @@ Route::get('/videos', [App\Http\Controllers\HomeController::class, 'video'])->na
 Route::get('/contact-us', function () {
     return view('agro.contact_us');
 })->name('contact');
+
+Route::get('/returnmail', function () {
+    $contact = Contact::first();
+    return view('mails.returnmail', compact('contact'));
+});
+Route::get('/adminmail', function () {
+    $contact = Contact::first();
+    return view('mails.adminmail', compact('contact'));
+});
 
 Route::post('/contact-detail', [App\Http\Controllers\HomeController::class,'ContactSave']);
 

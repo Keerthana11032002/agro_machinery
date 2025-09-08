@@ -51,8 +51,13 @@ $(document).on('keyup', '#contact_email', function() {
         $('.contact-mail-error').text('* Email ID field shouldn\'t be empty.');
     }
 });
-$('.contact-form').on("submit",function (e) {
-    e.preventDefault();
+$('#contact_form').submit(function(e) {
+    e.preventDefault(); 
+    var form = $(this); 
+    var submitBtn = form.find('button[type="submit"]');
+    submitBtn.prop('disabled', true);
+    var formData = new FormData(this);
+    let successCallbackExecuted = false;
     var name = $('#contact_name').val();
     var nameRegex = /^[A-Za-z.]+( [A-Za-z.]+)*$/;
     if (!nameRegex.test(name)) {
@@ -81,12 +86,16 @@ $('.contact-form').on("submit",function (e) {
         $('.contact-message-error').text('* Message field shouldn\'t be empty.');
     }
     $.ajax({
-        type: "POST",
-        url:'/contact-detail',
-        data: {'name': name, 'email': email, 'number': number, 'message': message},
-        headers: {
+        type:'POST',
+        url: baseurl+'/contact-detail',
+        data: formData,
+        headers: 
+        {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
+        cache:false,
+        contentType: false,
+        processData: false, 
         beforeSend: function() {
             var nameRegex = /^[A-Za-z.]+( [A-Za-z.]+)*$/;
             var emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -121,6 +130,7 @@ $('.contact-form').on("submit",function (e) {
                 }
                 return false;
             }
+            submitBtn.prop('disabled', false);
             $("#type-sbt").hide();
             $("#type-btn").show();
             $('#type-btn').html('<i class="fa fa-spinner fa-spin"></i> Please wait');

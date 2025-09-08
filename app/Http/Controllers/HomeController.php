@@ -75,35 +75,41 @@ class HomeController extends Controller
             'email' => ['required', 'string', 'email'],
             'message' => ['required'],
         ]);
+    
         $contact = new Contact;
         $contact->name = $request->name;
         $contact->mail = $request->email;
         $contact->phone = $request->number;
         $contact->description = $request->message;
         $contact->save();
-
+    
         $date_time = Carbon::parse($contact->created_at)->diffForHumans();
-        $html = view('mails.adminmail', compact('contact','date_time'))->render();
-        $adminEmail = "keerthana@skyraan.com";
-        $userEmail = $contact->mail;
-        $userName = $contact->name;
-        $subject ="New Message Received from " .$userName;
-        Mail::html($html, function($message) use($userName, $userEmail, $adminEmail, $subject)
-        {
-            $message->from($userEmail,$userName);
-            $message->to($adminEmail,'Jai Agro Machinery');
+    
+        // Admin email
+        $adminEmail = "support@skyraantech.com";
+        $userEmail  = $contact->mail;
+        $userName   = $contact->name;
+        // Send mail to admin
+        $html = view('mails.adminmail', compact('contact', 'date_time'))->render();
+        $subject = "New Message Received from " . $userName;
+    
+        Mail::html($html, function($message) use($userName, $userEmail, $adminEmail, $subject) {
+            $message->from("support@skyraantech.com", "Jai Agro Machinery"); // Always from your domain
+            $message->to($adminEmail, 'Jai Agro Machinery');
+            $message->replyTo($userEmail, $userName); // User email as reply-to
             $message->subject($subject);
         });
-        $replay = view('mails.returnmail')->render();
-        $subject ="Message Received at Jai Agro Machinery";
-        $data = view('mails.returnmail', compact('contact','date_time'))->render();
-        Mail::html($data, function($message) use($userName, $userEmail, $adminEmail, $subject)
-        {
-            $message->from($adminEmail,'Jai Agro Machinery');
-            $message->to($userEmail,$userName);
+    
+        // Send auto-reply to user
+        $data = view('mails.returnmail', compact('contact', 'date_time'))->render();
+        $subject = "Message Received at Jai Agro Machinery";
+    
+        Mail::html($data, function($message) use($userName, $userEmail, $adminEmail, $subject) {
+            $message->from($adminEmail, 'Jai Agro Machinery');
+            $message->to($userEmail, $userName);
             $message->subject($subject);
         });
-        
-        return response()->json(['message' => 'Yours message sent successfully']);
+    
+        return response()->json(['message' => 'Your message has been sent successfully']);
     }
 }
