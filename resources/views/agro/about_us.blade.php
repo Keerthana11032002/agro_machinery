@@ -48,7 +48,7 @@
                     <img src="{{url('assets/images/banner/about_458236459827.png')}}" alt="Agro Machinery Founder Image" class="">
                 </div>
                 <h2 class="mb-4 fw-bold">{{$setting->title}}</h2>
-                <p class="lh-lg pb-3">“AGROMECH ENGINEERS” is a ‘Proprietorship Concern’, We introduced ourselves as a manufacturers of 
+                <p class="lh-lg pb-3">“{{$setting->title}}” is a ‘Proprietorship Concern’, We introduced ourselves as a manufacturers of 
                 modern rice mill machineries, Grain cleaning equipment, Food processing equipment’s and agro based 
                 machineries.</p>
 
