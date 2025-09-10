@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @php
-    $title = "Jai Agro Machinery | Leading Web and Mobile App Development in Coimbatore";
-    $meta_title = "Jai Agro Machinery provides best IT solutions for businesses";
+    $title = "AGROMECH ENGINEERS | Leading Web and Mobile App Development in Coimbatore";
+    $meta_title = "AGROMECH ENGINEERS provides best IT solutions for businesses";
     $meta_description = "Skyraan is an IT company located in Coimbatore that provides services such as Web development, mobile app development, digital marketing, and branding";
 @endphp
 
@@ -47,7 +47,7 @@
                 <div class="banner mb-4">
                     <img src="{{url('assets/images/banner/about_458236459827.png')}}" alt="Agro Machinery Founder Image" class="">
                 </div>
-                <h2 class="mb-4 fw-bold">Jai Agro Mechinary</h2>
+                <h2 class="mb-4 fw-bold">{{$setting->title}}</h2>
                 <p class="lh-lg pb-3">“AGROMECH ENGINEERS” is a ‘Proprietorship Concern’, We introduced ourselves as a manufacturers of 
                 modern rice mill machineries, Grain cleaning equipment, Food processing equipment’s and agro based 
                 machineries.</p>

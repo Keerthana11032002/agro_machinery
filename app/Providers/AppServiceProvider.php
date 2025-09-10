@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         
-        $contentUrl = env('CONTENT_URL', 'http://localhost/agro_machinery_admin/public/');
+        $contentUrl = env('CONTENT_URL', 'http://agromachineryadmin.skyraantech.com/public/');
         $setting = Setting::first();
         View::share(compact('contentUrl', 'setting'));
         paginator::useBootstrapFive();

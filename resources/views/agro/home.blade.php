@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @php
-    $title = "Jai Agro Machinery | Leading Web and Mobile App Development in Coimbatore";
-    $meta_title = "Jai Agro Machinery provides best IT solutions for businesses";
+    $title = "AGROMECH ENGINEERS | Leading Web and Mobile App Development in Coimbatore";
+    $meta_title = "AGROMECH ENGINEERS provides best IT solutions for businesses";
     $meta_description = "Skyraan is an IT company located in Coimbatore that provides services such as Web development, mobile app development, digital marketing, and branding";
 @endphp
 
@@ -141,20 +141,20 @@
                     <h2 class="text-center mb-4 fw-bold">Explore Our Gallery</h2>
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{url('assets/images/home/Frame 3382307.png')}}" data-aos="fade-down-right" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="Jai Agro Machinery Gallery Image"/>
+                            <img src="{{url('assets/images/home/Frame 3382307.png')}}" data-aos="fade-down-right" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="AGROMECH ENGINEERS Gallery Image"/>
                         </div>
                         <div class="col-8">
-                            <img src="{{url('assets/images/home/image_28346523.png')}}" data-aos="fade-down-left" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="Jai Agro Machinery Gallery Image"/>
+                            <img src="{{url('assets/images/home/image_28346523.png')}}" data-aos="fade-down-left" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="AGROMECH ENGINEERS Gallery Image"/>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('assets/images/home/Frame 3382309.png')}}" data-aos="fade-up-right" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="Jai Agro Machinery Gallery Image"/>
+                            <img src="{{url('assets/images/home/Frame 3382309.png')}}" data-aos="fade-up-right" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="AGROMECH ENGINEERS Gallery Image"/>
                         </div>
                         <div class="col-4">
-                            <img src="{{url('assets/images/home/Frame 3382310.png')}}" data-aos="fade-up" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="Jai Agro Machinery Gallery Image"/>
+                            <img src="{{url('assets/images/home/Frame 3382310.png')}}" data-aos="fade-up" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="AGROMECH ENGINEERS Gallery Image"/>
                         </div>
                         <div class="col-4">
                             <a href="{{url('/gallery')}}">
-                                <img src="{{url('assets/images/home/Frame 3382311.png')}}" data-aos="fade-up-left" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="Jai Agro Machinery Gallery Image"/>
+                                <img src="{{url('assets/images/home/Frame 3382311.png')}}" data-aos="fade-up-left" data-aos-duration="1500" class="gallery_img w-100 pb-3" alt="AGROMECH ENGINEERS Gallery Image"/>
                             </a>
                         </div>
                     </div>
@@ -190,13 +190,13 @@
                     <div class="row">
                         <div class="col-12 col-md-5 col-lg-5 col-xl-5 col-xl-5 pe-4">
                             <h2 class="fw-bold lh-lg" data-aos="fade-left">Our Services</h2>
-                            <img src="{{url('assets/images/home/young-farmer-taking-care-his-business 1.png')}}" data-aos="fade-left" class="service_img pb-3 mbl-view w-75" alt="Jai Agro Machinery Services Image"/>
+                            <img src="{{url('assets/images/home/young-farmer-taking-care-his-business 1.png')}}" data-aos="fade-left" class="service_img pb-3 mbl-view w-75" alt="AGROMECH ENGINEERS Services Image"/>
                             <p class="lh-lg pb-3" data-aos="fade-left">We prioritize your trust by ensuring that all your information is kept safe and secure through advanced encryption and privacy protection. Our platform is designed with security at its core, so you can browse, post, and manage your business confidently. </p>
                             <li class="pb-3" data-aos="fade-left">We prioritize your trust by ensuring that all your information is kept</li>
                             <li class="pb-3" data-aos="fade-left">We prioritize your trust by ensuring that all your information is kept</li>
                         </div>
                         <div class="col-6 sys-view">
-                            <img src="{{url('assets/images/home/young-farmer-taking-care-his-business 1.png')}}" data-aos="fade-right" class="service_img w-100" alt="Jai Agro Machinery Services Image"/>
+                            <img src="{{url('assets/images/home/young-farmer-taking-care-his-business 1.png')}}" data-aos="fade-right" class="service_img w-100" alt="AGROMECH ENGINEERS Services Image"/>
                         </div>
                     </div>
                 </div>

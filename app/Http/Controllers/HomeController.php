@@ -95,18 +95,18 @@ class HomeController extends Controller
         $subject = "New Message Received from " . $userName;
     
         Mail::html($html, function($message) use($userName, $userEmail, $adminEmail, $subject) {
-            $message->from("support@skyraantech.com", "Jai Agro Machinery"); // Always from your domain
-            $message->to($adminEmail, 'Jai Agro Machinery');
+            $message->from("support@skyraantech.com", "AGROMECH ENGINEERS"); // Always from your domain
+            $message->to($adminEmail, 'AGROMECH ENGINEERS');
             $message->replyTo($userEmail, $userName); // User email as reply-to
             $message->subject($subject);
         });
     
         // Send auto-reply to user
         $data = view('mails.returnmail', compact('contact', 'date_time'))->render();
-        $subject = "Message Received at Jai Agro Machinery";
+        $subject = "Message Received at AGROMECH ENGINEERS";
     
         Mail::html($data, function($message) use($userName, $userEmail, $adminEmail, $subject) {
-            $message->from($adminEmail, 'Jai Agro Machinery');
+            $message->from($adminEmail, 'AGROMECH ENGINEERS');
             $message->to($userEmail, $userName);
             $message->subject($subject);
         });

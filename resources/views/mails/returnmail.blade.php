@@ -116,7 +116,7 @@
       <tr>
         <td class="header">
           <img src="https://agromachinery.skyraantech.com/public/assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png" alt="Logo" class="logo">
-          <span>Jai Agro Machinery</span>
+          <span>AGROMECH ENGINEERS</span>
         </td>
       </tr>
       <!-- Banner -->
@@ -147,7 +147,7 @@
           </p>
           <p>
             Thanking you,<br>
-            Jai Agro Machinery
+            AGROMECH ENGINEERS
           </p>
         </td>
       </tr>

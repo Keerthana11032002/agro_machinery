@@ -10,8 +10,8 @@
     <!-- Header -->
     <tr>
       <td style="background:#e6f4ea; padding:20px; text-align:center;">
-        <img src="https://agromachinery.skyraantech.com/public/assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png" alt="Jai Agro Machinery" style="max-width:120px;">
-        <h2 style="color:#2e7d32; margin:10px 0 0;">Jai Agro Machinery</h2>
+        <img src="https://agromachinery.skyraantech.com/public/assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png" alt="AGROMECH ENGINEERS" style="max-width:120px;">
+        <h2 style="color:#2e7d32; margin:10px 0 0;">AGROMECH ENGINEERS</h2>
       </td>
     </tr>
     
@@ -39,8 +39,8 @@
     <!-- Footer -->
     <tr>
       <td style="background:#e6f4ea; padding:15px; text-align:center; font-size:13px; color:#555;">
-        <p>📌 This email was sent automatically by <strong>Jai Agro Machinery</strong>.</p>
-        <p>© {{ date('Y') }} Jai Agro Machinery. All rights reserved.</p>
+        <p>📌 This email was sent automatically by <strong>AGROMECH ENGINEERS</strong>.</p>
+        <p>© {{ date('Y') }} AGROMECH ENGINEERS. All rights reserved.</p>
       </td>
     </tr>
   </table>

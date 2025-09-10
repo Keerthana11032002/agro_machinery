@@ -15,10 +15,10 @@
                             <p class="my-3 fs-6">We prioritize your trust by ensuring that all your information is kept safe and secure through advanced encryption and privacy protection. Our platform is design.</p>
                             <div>Follow Us On</div>
                             <div class="d-flex gap-2 my-3" id="share">
-                                <a target="_blank" class="facebook" href="https://www.facebook.com/Skyraan-Technologies-101287766001025"><img src="{{asset('assets/images/social_media/facebok_24049856.png')}}" alt="Jai Agro Machinery Facebook"/></a>
-                                <a target="_blank" class="instagram" href="https://www.linkedin.com/company/82362935/admin/"><img src="{{asset('assets/images/social_media/instagram_8234576.png')}}" alt="Jai Agro Machinery Instagram"/></a>
-                                <a target="_blank" class="twitter" href="https://twitter.com/skyraantech"><img src="{{asset('assets/images/social_media/twitter_92372287.png')}}" alt="Jai Agro Machinery Twitter"/></a>
-                                <a target="_blank" class="youtube" href="https://www.instagram.com/skyraantechnologies?igsh=MWljN3owMmV6Y3ZoMA=="><img src="{{asset('assets/images/social_media/youtube_35321645.png')}}" alt="Jai Agro Machinery YouTube channel"/></a>
+                                <a target="_blank" class="facebook" href="https://www.facebook.com/Skyraan-Technologies-101287766001025"><img src="{{asset('assets/images/social_media/facebok_24049856.png')}}" alt="AGROMECH ENGINEERS Facebook"/></a>
+                                <a target="_blank" class="instagram" href="https://www.linkedin.com/company/82362935/admin/"><img src="{{asset('assets/images/social_media/instagram_8234576.png')}}" alt="AGROMECH ENGINEERS Instagram"/></a>
+                                <a target="_blank" class="twitter" href="https://twitter.com/skyraantech"><img src="{{asset('assets/images/social_media/twitter_92372287.png')}}" alt="AGROMECH ENGINEERS Twitter"/></a>
+                                <a target="_blank" class="youtube" href="https://www.instagram.com/skyraantechnologies?igsh=MWljN3owMmV6Y3ZoMA=="><img src="{{asset('assets/images/social_media/youtube_35321645.png')}}" alt="AGROMECH ENGINEERS YouTube channel"/></a>
                             </div>
                         </div>
                     </div>
