@@ -12,7 +12,7 @@
                 <!-- <div id="loaders" class="loader">
                     <div class="book">
                         <div class="inner">
-                            <img src="{{url('assets/images/logo/53e0228d2974f464887e16225903a69bdf5b51c0.png')}}" alt="AGROMECH ENGINEERS" class="w-100"/>
+                            <img src="{{$contentUrl.$setting->logo}}" alt="{{$setting->title}}" class="w-100"/>
                         </div>
                     </div>
                 </div> -->
