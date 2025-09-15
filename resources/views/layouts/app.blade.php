@@ -9,13 +9,13 @@
         <div id="app">
             @include('layouts.navbar')
             <main>
-                <!-- <div id="loaders" class="loader">
+                <div id="loaders" class="loader">
                     <div class="book">
                         <div class="inner">
-                            <img src="{{$contentUrl.$setting->logo}}" alt="{{$setting->title}}" class="w-100"/>
+                            <img src="{{url('assets/images/logo/screenshot2025293845728.png')}}" alt="{{$setting->title}}" class="w-100"/>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 @yield('content')
             </main>
             @include('layouts.footer')

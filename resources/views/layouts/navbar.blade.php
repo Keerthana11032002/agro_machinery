@@ -72,7 +72,7 @@
                             <hr>
                         </li>
                         <li>
-                            <a class="nav-link" aria-current="page" href="mailto:{{$settings->mail}}"><img src="{{asset('assets/images/mail_932485.png')}}" class="me-2" style="width: 26px;filter: brightness(0) saturate(100%) invert(70%) sepia(31%) saturate(0%) hue-rotate(239deg) brightness(89%) contrast(90%);"/>{{$settings->mail}}</a>
+                            <a class="nav-link" aria-current="page" href="mailto:{{$setting->mail}}"><img src="{{asset('assets/images/mail_932485.png')}}" class="me-2" style="width: 26px;filter: brightness(0) saturate(100%) invert(70%) sepia(31%) saturate(0%) hue-rotate(239deg) brightness(89%) contrast(90%);"/>{{$setting->mail}}</a>
                         </li>
                     </ul>
                 </div>
