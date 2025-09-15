@@ -56,7 +56,6 @@ body {
 	height: 12px;
 	position: relative;
 	transform-origin: 2px 2px;
-	/* transform: rotateZ(-90deg); */
 	-webkit-animation: book var(--duration) ease infinite;
 			animation: book var(--duration) ease infinite;
   }
