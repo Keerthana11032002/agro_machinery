@@ -103,7 +103,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-5 p-0 sys-view tab-view-no">
-                        <img src="{{url('assets/images/home/golden-combine-harvesters-work-wheat-fields-cutting-generated.png')}}" data-aos="fade-right" class="pb-3 w-100" alt="why choose us"/>
+                        <img src="{{url('assets/images/home/golden-combine-harvesters-work-wheat-fields-cutting-generated.png')}}" data-aos="fade-right" class="h-100 w-100 object-fit-cover" alt="why choose us"/>
                     </div>
                     <div class="col-12 col-lg-7 p-0">
                         <div class="choose_us_bg px-4 px-sm-5 px-md-5 px-lg-5 px-xl-5 px-xxl-5">
