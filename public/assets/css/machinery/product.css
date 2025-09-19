@@ -32,9 +32,17 @@
 p {
     line-height: 2!important;
 }
+.prdt_decrt {
+    height: 400px;
+    overflow-y: scroll;
+}
 @media(min-width: 600px) and (max-width: 1024px) {
     #products, #product_detail {
         padding-top: 5rem;
+    }
+    .prdt_decrt {
+        height: 300px;
+        overflow-y: scroll;
     }
 }
 @media (max-width: 600px) {
