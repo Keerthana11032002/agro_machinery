@@ -26,14 +26,14 @@
             <div class="banner py-4">
                 <div class="container">
                     <div class="bnr_wdt">
-                        <h3 class="fw-bold text-white mb-3" data-aos="fade-right" data-aos-duration="1000">Contact Us</h3>
-                        <p class="text-white lh-lg mb-0" data-aos="fade-right" data-aos-duration="1000">Our wide range of products—from tractors and tillers to harvesters and precision equipment—are designed with modern technology while keeping farmers’ needs at the core.</p>
+                        <h3 class="fw-bold text-white mb-3" data-aos="fade-right" data-aos-duration="1500">Contact Us</h3>
+                        <p class="text-white lh-lg mb-0" data-aos="fade-right" data-aos-duration="1500">Our wide range of products—from tractors and tillers to harvesters and precision equipment—are designed with modern technology while keeping farmers’ needs at the core.</p>
                     </div>
                 </div>
             </div>
             <div class="main">
                 <div class="container">
-                    <div class="main_crd card border-0 p-3 plg-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="main_crd card border-0 p-3 plg-5" data-aos="fade-up" data-aos-duration="1500">
                         <div class="row gy-3">
                             <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                                 <div class="card grn_clr rounded-0 p-3">
